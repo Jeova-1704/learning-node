@@ -9,6 +9,7 @@ app.use(express.json());
 
 app.get('/', (req: Request, res: Response) => {
     res.send('Hello World!');
+    res.status(200);
 });
 
 app.listen(port, () => {
